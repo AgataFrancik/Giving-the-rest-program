@@ -1,0 +1,16 @@
+﻿  Funckje.cpp
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(16,4): error C3861: "exit": identyfikatora nie odnaleziono
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(18,17): warning C4477: „fprintf”: ciąg formatu „%s” wymaga argumentu typu „char *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int”
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(28,4): error C3861: "exit": identyfikatora nie odnaleziono
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(30,17): warning C4477: „fprintf”: ciąg formatu „%s” wymaga argumentu typu „char *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int”
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(13,50): warning C4390: ";": znaleziono kontrolowaną pustą instrukcję; czy to było zamierzone?
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(25,50): warning C4390: ";": znaleziono kontrolowaną pustą instrukcję; czy to było zamierzone?
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(45,4): error C3861: "exit": identyfikatora nie odnaleziono
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(58,4): error C3861: "exit": identyfikatora nie odnaleziono
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(60,17): warning C4477: „fprintf”: ciąg formatu „%s” wymaga argumentu typu „char *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int”
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(42,53): warning C4390: ";": znaleziono kontrolowaną pustą instrukcję; czy to było zamierzone?
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(55,53): warning C4390: ";": znaleziono kontrolowaną pustą instrukcję; czy to było zamierzone?
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(82,10): warning C4477: „scanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int”
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(96,12): warning C4552: „/”: Wynik wyrażenia nie jest używany
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(103,3): error C3861: "srand": identyfikatora nie odnaleziono
+E:\PPk\PK\Projekt PK2\Projekt PK2\Funckje.cpp(104,16): error C3861: "rand": identyfikatora nie odnaleziono
