@@ -41,12 +41,11 @@ int main()
 				printf("Masz wiecej niz musisz miec.");
 				break;
 			}
-			if (isdigit(iloscBrakuje) == 0)
-			{
-				char napis = "Ilosc musisz podac numerycznie.";
-				puts(napis);
-				break;
-			}
+			//if (isdigit(iloscBrakuje) == 0)
+			//{
+				//puts("Ilosc musisz podac numerycznie.");
+				//break;
+			//}
 			printf(" Jaka jest waznosc tego produktu?\n 1-Na jutro\n 2-Na miesiac\n");
 			scanf("%d", &waga);
 			if (waga == 2)
