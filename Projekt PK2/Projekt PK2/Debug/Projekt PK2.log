@@ -1,9 +1,14 @@
 ﻿  Źródło.c
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(31,15): warning C4047: "funkcja": "const char *" różni się w poziomach operatorów pośrednich od "char"
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(31,15): warning C4024: "puts": różne typy dla formalnego i rzeczywistego parametru 1
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(71,28): warning C4244: "funkcja": konwersja z "float" do "int", możliwa utrata danych
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(74,15): warning C4047: "funkcja": "const char *" różni się w poziomach operatorów pośrednich od "char"
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(74,15): warning C4024: "puts": różne typy dla formalnego i rzeczywistego parametru 1
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(30,1): warning C4047: "inicjowanie": "char" różni się w poziomach operatorów pośrednich od "char [29]"
-E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(73,1): warning C4047: "inicjowanie": "char" różni się w poziomach operatorów pośrednich od "char [32]"
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(27,24): warning C4047: "=": "char" różni się w poziomach operatorów pośrednich od "char [12]"
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(34,15): warning C4047: "funkcja": "const char *" różni się w poziomach operatorów pośrednich od "char"
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(34,15): warning C4024: "puts": różne typy dla formalnego i rzeczywistego parametru 1
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(37,14): warning C4013: niezdefiniowany "strlen"; przy założeniu, że extern zwraca int
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(73,19): warning C4013: niezdefiniowany "DodajDoDziennej"; przy założeniu, że extern zwraca int
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(76,27): warning C4047: "=": "char" różni się w poziomach operatorów pośrednich od "char [15]"
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(103,28): warning C4244: "funkcja": konwersja z "float" do "int", możliwa utrata danych
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(106,15): warning C4047: "funkcja": "const char *" różni się w poziomach operatorów pośrednich od "char"
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(106,15): warning C4024: "puts": różne typy dla formalnego i rzeczywistego parametru 1
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(116,22): warning C4013: niezdefiniowany "DodajDoMiesiecznej"; przy założeniu, że extern zwraca int
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(33,1): warning C4047: "inicjowanie": "char" różni się w poziomach operatorów pośrednich od "char [29]"
+E:\PPk\PK2-git\Projekt PK2\Projekt PK2\Źródło.c(105,1): warning C4047: "inicjowanie": "char" różni się w poziomach operatorów pośrednich od "char [32]"
   Projekt PK2.vcxproj -> E:\PPk\PK2-git\Projekt PK2\Debug\Projekt PK2.exe

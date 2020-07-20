@@ -124,10 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Funkcjee.c" />
+    <ClCompile Include="ListaDzienna.c" />
+    <ClCompile Include="ListaMiesieczna.c" />
     <ClCompile Include="Źródło.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Funkcje.h" />
+    <ClInclude Include="ListaDzienna.h" />
+    <ClInclude Include="ListaMiesieczna.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

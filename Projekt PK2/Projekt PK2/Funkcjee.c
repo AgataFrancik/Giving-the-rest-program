@@ -6,64 +6,27 @@
 #include <time.h>
 #include <ctype.h>
 
-void DodajDoDziennej(char produkt, float iloscBrakuje, int usunac)
+int CzyBylo(char produkt, char jaka)
 {
-	FILE* plik;
-	if (usunac == 0)
+	FILE* plik = fopen(jaka, "r");
+	int n;
+	char s[20];
+	if (plik == NULL)   
 	{
-		if ((plik = fopen("Dzienna.txt", "a")) == NULL);
-		{
-			printf("Tego pliku nie da sie otworzyc");
-			exit(1);
-		}
-		fprintf(plik, "%s", produkt);
-		fprintf(plik, "%f", iloscBrakuje);
-		fprintf(plik, "/n");
-		fclose(plik);
+		printf("Pliku nie mozna otworzyc");
+		exit(1);   
 	}
-	else
-	{
-		if ((plik = fopen("Dzienna.txt", "w")) == NULL);
+	while (fscanf(plik, "%s%d", s, &n) != EOF)
+	{    
+		if (strcmp(s, produkt) == 0)
 		{
-			printf("Tego pliku nie da sie otworzyc");
-			exit(1);
+			return 1;
 		}
-		fprintf(plik, "%s", produkt);
-		fprintf(plik, "%f", iloscBrakuje);
-		fprintf(plik, "/n");
-		fclose(plik);
 	}
+	return 0;
+	fclose(plik);
 }
-void DodajDoMiesiecznej(char produkt, float iloscBrakuje, int usunac)
-{
-	FILE* plik;
-	if (!usunac)
-	{
-		plik = fopen("Miesieczna.txt", "a");
-		if ((plik = fopen("Miesieczna.txt", "a")) == NULL);
-		{
-			printf("Tego pliku nie da sie otworzyc");
-			exit(1);
-		}
-		fprintf(plik, "%s", &produkt);
-		fprintf(plik, "%f", iloscBrakuje);
-		fprintf(plik, "/n");
-		fclose(plik);
-	}
-	else
-	{
-		plik = fopen("Miesieczna.txt", "w");
-		if ((plik = fopen("Miesieczna.txt", "w")) == NULL);
-		{
-			printf("Tego pliku nie da sie otworzyc");
-			exit(1);
-		}
-		fprintf(plik, "%s", produkt);
-		fprintf(plik, "%f", iloscBrakuje);
-		fprintf(plik, "/n");
-		fclose(plik);
-	}
-}
+
 void Gra()
 {
 	printf("Zagrajmy w zgadywanki. Ja mam zgadywac, czy Ty? ");

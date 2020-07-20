@@ -8,20 +8,23 @@
 
 int main()
 {
-	int wybor=0,waga=0;
+	int wybor=0,waga=0,decyzja;
 	int usunac = 0;
 	float iloscZostalo, iloscPowinno, iloscBrakuje;
 	char produkt;
 	char* tab;
+	char jaka;
 	tab=malloc(5 * sizeof(*tab));
 	tab = "Witamy w organizerze zakupow\n";
 	puts(tab);
+	printf("W programie liczba 1 oznacza tak, a 0 oznacze nie.\n");
 	printf("Co zamierzasz zrobic?\n");
 	printf(" 1.Zrobic nowa liste zakupow na jutro\n 2. Zrobic nowa liste zakupow na miesiac\n 3.Dodac do poprzedniej listy zakupow artykuly\n 4.Nic. Pograc\n");
 	scanf("%d", &wybor);
 	switch (wybor)
 	{
 		case 1:
+			jaka = "Dzienna.txt";
 			usunac = 1;
 			printf("Podaj nazwe produktu \n");
 			scanf("%s", &produkt);
@@ -29,6 +32,20 @@ int main()
 			{
 				char napis = "Ilosc musisz podac literami.";
 				puts(napis);
+				break;
+			}
+			if (strlen(produkt) > 15)
+			{
+				printf("Dosc dluga nazwa produktu. Na pewno chodzi o jeden produkt? Pamietaj o podawaniu ich oddzielnie!");
+				scanf("%d", &decyzja);
+				if (decyzja == 0)
+				{
+					break;
+				}
+			}
+			if (CzyBylo(produkt,jaka) == 1)
+			{
+				printf("Taki produkt juz jest na liscie!");
 				break;
 			}
 			printf("Ile ci zostalo tego produktu?\n");
@@ -56,8 +73,23 @@ int main()
 			DodajDoDziennej(produkt, iloscBrakuje, usunac);
 		case 2:
 			usunac = 1;
+			jaka = "Miesieczna.txt";
 			printf("Podaj nazwe produktu \n");
 			scanf("%s", &produkt);
+			if (strlen(produkt) > 15)
+			{
+				printf("Dosc dluga nazwa produktu. Na pewno chodzi o jeden produkt? Pamietaj o podawaniu ich oddzielnie!");
+				scanf("%d", &decyzja);
+				if (decyzja == 0)
+				{
+					break;
+				}
+			}
+			if (CzyBylo(produkt, jaka) == 1)
+			{
+				printf("Taki produkt juz jest na liscie!");
+				break;
+			}
 			printf("Ile ci zostalo tego produktu?\n");
 			scanf("%f", &iloscZostalo);
 			printf("Ile powinno byc produktu?\n");
